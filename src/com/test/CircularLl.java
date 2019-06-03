@@ -68,21 +68,6 @@ public class CircularLl {
 			
 		}
 	}
-	  public void print()
-	  {
-		  System.out.print("Circular Linked List:");
-	        Node temp = head;
-		  if(size<=0)
-				System.out.println("list is empty");
-		  else
-		  {
-			  do
-			  {
-				  
-			  }
-			  
-		  }
-	  }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
