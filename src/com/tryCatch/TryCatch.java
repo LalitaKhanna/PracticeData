@@ -2,17 +2,14 @@ package com.tryCatch;
 
 public class TryCatch {
 
-	public static void main(String[] args) throws Exception {
-		//System.out.println(10/0);
+	public static void main(String[] args) 
+	{
 		try {
 			System.out.println(10/0);
 		} catch(Exception e){
-			System.out.println("Error :"+e.getMessage());
-			//System.out.println(10/0);
-			//System.exit(0);
-			//throw new Exception();
+			System.out.println("Error :can not divide by zero");
 		}finally {
-			System.out.println("Prince Uppal");
+			System.out.println("finaaly block");
 		}
 	}
 }
