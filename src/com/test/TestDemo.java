@@ -1,25 +1,31 @@
 package com.test;
 
+import java.util.Scanner;
 
 public class TestDemo {
-
-
-	static String data="Lalita Khanna";
-	
-	static{
-		System.out.println("Static Block");
-	}
-/*	public class Add{
-	 int addTwoNumbers(int a, int b){
-			return a+b;
-	}*/
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int []a = {10,20,30};
-		System.out.println("testing");
-        System.out.println(a[1]);
-        System.out.println(data);
-	}
-
+	public static void reverse(char arr[])
+	{ int  r = arr.length-1;
+		int l=0;
+		while(l<r) {
+		if(!Character.isAlphabetic(arr[l]))
+		l++;
+		else if(!Character.isAlphabetic(arr[r]))
+			r--;
+		else {
+			char temp = arr[l];
+			arr[l] = arr[r];
+			arr[r]= temp;
+			l++;
+			r--;
+			
+		}
+	}}
+	public static void main(String []argh){
+		 String str = "a!!!b.c.d,e'f,ghi"; 
+		 char[] arr = str.toCharArray();
+		 System.out.println("input string--  "  +  str);
+		 reverse(arr);
+		 String rev =new String(arr);
+		 System.out.println("reversed string--  "  +  rev);
+    }
 }
